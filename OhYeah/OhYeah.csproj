@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ReactJs\**" />
+    <Compile Remove="wwwroot\js\ReactJs\**" />
+    <Compile Remove="wwwroot\ReactJs\**" />
+    <Content Remove="ReactJs\**" />
+    <Content Remove="wwwroot\js\ReactJs\**" />
+    <Content Remove="wwwroot\ReactJs\**" />
+    <EmbeddedResource Remove="ReactJs\**" />
+    <EmbeddedResource Remove="wwwroot\js\ReactJs\**" />
+    <EmbeddedResource Remove="wwwroot\ReactJs\**" />
+    <None Remove="ReactJs\**" />
+    <None Remove="wwwroot\js\ReactJs\**" />
+    <None Remove="wwwroot\ReactJs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\ReactJs\dist\all.css" />
+    <Content Include="wwwroot\ReactJs\dist\index.html" />
+    <Content Include="wwwroot\ReactJs\dist\index_bundle.js.LICENSE.txt" />
+    <Content Include="wwwroot\ReactJs\kendo-ui-license.txt" />
+    <Content Include="wwwroot\ReactJs\package-lock.json" />
+    <Content Include="wwwroot\ReactJs\package.json" />
+    <Content Include="wwwroot\ReactJs\src\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\ReactJs\dist\index_bundle.js" />
+    <None Include="wwwroot\ReactJs\src\components\App.js" />
+    <None Include="wwwroot\ReactJs\src\index.js" />
+    <None Include="wwwroot\ReactJs\webpack.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+</Project>

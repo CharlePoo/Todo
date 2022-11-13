@@ -1,0 +1,88 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.selected {
+    background:pink;
+}
+
+.clearBoth {
+    clear:both;
+}
+
+.floatLeft {
+    float:left;
+}
+
+.todo {
+    margin: 10px;
+    float:left;
+}
+
+.addTask {
+    position: absolute;
+    margin: -35px 0 0 182px;
+}
+
+.addTask button {
+    margin: 0 2px 0 0;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.addTask button:hover {
+    color: wheat;
+}
+
+.addTodo {
+    position: absolute;
+    margin: -35px 0 0 87px;
+}
+
+.editTask {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 0;
+    color: lightslategrey;
+    font-size: smaller;
+}
+
+    .editTask:hover {
+        color: black;
+    }
+
+
+
+.showTaskTextBox {
+    display: block;
+}
+
+.hideTaskTextBox {
+    display: none;
+}
+
+.closeEdit {
+    position: absolute;
+    margin-top:5px;
+}
+.closeEdit:hover {
+    color: black;
+}
